@@ -1,0 +1,24 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+:root {
+  --size: 1
+}
+
+.board {
+  height: calc(100vh - 4rem);
+  aspect-ratio: 1 / 1;
+  display: grid;
+  grid-template-columns: repeat(var(--size), calc(100% / var(--size)));
+  grid-template-rows: repeat(var(--size), calc(100% / var(--size)));
+  gap: 2px;
+}
+
+.card {
+  height: 300px;
+  width: 300px;
+  background: #535bf2;
+}
